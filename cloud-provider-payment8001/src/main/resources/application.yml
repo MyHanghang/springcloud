@@ -26,8 +26,11 @@ eureka:
     fetch-registry: true
     service-url:
       #      defaultZone: http://localhost:7001/eureka
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      #      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      defaultZone: http://localhost:7001/eureka
       #表示是否将自己注册进EurekaServer 默认为true
   instance:
     instance-id: payment8001
     prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
