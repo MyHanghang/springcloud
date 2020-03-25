@@ -32,7 +32,7 @@ public class OrderController {
 
     @GetMapping("/consumer/payment/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id) {
-        log.info("开始调用支付模块....");
+        log.info("开始调用支付模块...gogogo.");
         return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
     }
 }
