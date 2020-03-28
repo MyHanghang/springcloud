@@ -7,14 +7,21 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author Zhihang
- * @version 1.0
- * @date 2020/3/13 14:14
+ * @ClassName Payment
+ * @Description TODO
+ * @Author 我叫航航航啊
+ * @Date 2020/3/29 0:33
+ * @Version V2.0
  **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Payment implements Serializable {
-    private long id;
+
+
+    private Long id;
+
     private String serial;
+
+
 }

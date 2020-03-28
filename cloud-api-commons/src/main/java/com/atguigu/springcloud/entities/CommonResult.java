@@ -8,9 +8,11 @@ import lombok.NoArgsConstructor;
  * @ClassName CommonResult
  * @Description TODO
  * @Author 我叫航航航啊
- * @Date 2020/3/13 0:06
- * @Version V1.0
+ * @Date 2020/3/29 0:29
+ * @Version V2.0
  **/
+
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
