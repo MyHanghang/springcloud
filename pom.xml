@@ -16,7 +16,12 @@
         <module>cloud-eureka-server7001</module>
         <module>cloud-eureka-server7002</module>
         <module>cloud-provider-payment8002</module>
+<<<<<<< HEAD
         <module>cloud-provider-payment8004</module>
+=======
+        <module>cloud-providerconsul-payment8006</module>
+        <module>cloud-consumerconsul-order80</module>
+>>>>>>> origin/master
     </modules>
 
     <properties>
