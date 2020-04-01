@@ -1,0 +1,14 @@
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: cloud-provider-hystrix
+
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      #集群指向其他eureka
+      #defaultZone: http://eureka7002.com:7002/eureka/
+      #单机版
+      defaultZone: http://eureka7001.com:7001/eureka/
