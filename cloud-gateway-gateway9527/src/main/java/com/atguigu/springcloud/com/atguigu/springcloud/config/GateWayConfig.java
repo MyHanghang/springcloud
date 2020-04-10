@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2020/4/8 17:28
  **/
 @Configuration
+
 public class GateWayConfig {
 
     @Bean
