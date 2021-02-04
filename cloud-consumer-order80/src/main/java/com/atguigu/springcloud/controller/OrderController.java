@@ -15,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 import javax.annotation.Resource;
 import java.net.URI;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * @author Zhihang
@@ -26,7 +27,6 @@ import java.util.List;
 public class OrderController {
 
     public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
-
     @Resource
     private RestTemplate restTemplate;
 
@@ -56,7 +56,7 @@ public class OrderController {
             log.info(entity.getStatusCode() + "\t" + entity.getStatusCodeValue());
             return entity.getBody();
         } else {
-            return new CommonResult<>(444, "操作失败");
+            return new CommonResult<>(444, "操作失败", null);
         }
     }
 

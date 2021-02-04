@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.logging.Logger;
 
 /**
  * @ClassName PaymentController
@@ -19,7 +20,7 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 public class PaymentController {
-
+    private Logger log;
     @Resource
     private PaymentService paymentService;
 
